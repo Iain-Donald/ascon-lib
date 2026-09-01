@@ -14,7 +14,7 @@ Use example commands from the project root.
 
 In your project, you only need to include the public header in `include/`. 
 
-- <root>
+- `<root>`
 
     - `src/` - Internal headers and source files. No need to import these.
 
