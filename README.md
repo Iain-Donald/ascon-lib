@@ -14,13 +14,11 @@ Use example commands from the project root.
 
 In your project, you only need to include the public header in `include/`. 
 
-- `<root>`
+- `src/` - Internal headers and source files. No need to import these.
 
-    - `src/` - Internal headers and source files. No need to import these.
+- `demo/` - Example C app using the everything in this library.
 
-    - `demo/` - Example C app using the everything in this library.
-
-    - `tests/` - A test app that checks the library functions against the official KAT test vectors, "Known Answer Test". An input-output set provided by the official spec. Passing the input data to a valid implementation will return data matching the expected output data. 
+- `tests/` - A test app that checks the library functions against the official KAT test vectors, "Known Answer Test". An input-output set provided by the official spec. Passing the input data to a valid implementation will return data matching the expected output data. 
 
 ## How to build and run
 
@@ -28,7 +26,7 @@ In your project, you only need to include the public header in `include/`.
 
 #### // Via CLI
 
-'zig cc', 'clang', 'gcc' is interchangeable for this. 
+'zig cc', 'clang', 'gcc' are interchangeable for this. 
 
 ```
 zig cc -std=c99 -I. demo.c ascon_hash.c ascon_xof.c ascon_aead.c ascon_perm.c -o demo
