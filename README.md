@@ -11,16 +11,21 @@ Use example commands from the project root.
 ## Importing
 
 ### Structure information.
+
 In your project, you only need to include the public header in `include/`. 
-The internal headers and source `src/`, example in `example/`, harness in `tests/`.
+
 - <root>
+
     - `src/` - Internal headers and source files. No need to import these.
+
     - `demo/` - Example C app using the everything in this library.
+
     - `tests/` - A test app that checks the library functions against the official KAT test vectors, "Known Answer Test". An input-output set provided by the official spec. Passing the input data to a valid implementation will return data matching the expected output data. 
 
 ## How to build and run
 
 ### Build demo
+
 #### // Via CLI
 
 'zig cc', 'clang', 'gcc' is interchangeable for this. 
@@ -38,6 +43,7 @@ zig build
 ### Build tests
 
 #### // Via CLI
+
 zig cc -std=c99 -O2 -Iinclude -Isrc tests/kat.c src/*.c -o kat
 
 #### // Via build.zig
