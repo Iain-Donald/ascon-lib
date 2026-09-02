@@ -10,15 +10,30 @@ Use example commands from the project root.
 
 ## Importing
 
-### Structure information.
+### Structure information, tree
 
-In your project, you only need to include the public header in `include/`. 
+> In your project, you only need to include the public header in <u>*include/*</u>.
+
+- `include/`
+    - ascon.h <i><-- include this only.</i>
 
 - `src/` - Internal headers and source files. No need to import these.
 
+    - ascon_aead.c
+    - ascon_hash.c
+    - ascon_perm.c
+    - ascon_perm.h
+    - ascon_sponge.h
+    - ascon_word.h
+    - ascon_xof.c
+
 - `demo/` - Example C app using the everything in this library.
 
+    - demo.c
+
 - `tests/` - A test app that checks the library functions against the official KAT test vectors, "Known Answer Test". An input-output set provided by the official spec. Passing the input data to a valid implementation will return data matching the expected output data. 
+    - `vectors/` ...
+    - kat.c
 
 ## How to build and run
 
