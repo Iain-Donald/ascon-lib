@@ -2,6 +2,10 @@
 ***
 ***
 
+### < In progress, ready soon! (any day now) >
+
+Current status: Testing implementation, files will trickle in. 
+
 ### // Ascon reference library for me and for you. //
 
 This is an Ascon/NIST SP 800-232 implementation in the form of a small C library. NIST SP 800-232 is the latest official standard. Every cipher from the official implementation is here. All functions/ciphers are validated against the official KAT vectors. C99 only for compatibility across compilers and systems. There are no dependencies, it is freestanding C. Not even libc is needed!
