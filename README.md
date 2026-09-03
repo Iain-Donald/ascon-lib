@@ -78,7 +78,7 @@ As mentioned earlier, there is no dependency on libc. It's recommended to use th
 
 #### Notes on Ascon
 
-There are multiple iterations published for competitions and a NIST draft. This implementation is based on the latest NIST "final" SP (special publication) as of at least 2026-09-26 ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) btw, written in [Neovim](https://neovim.io/) btw, Debian Testing btw). 
+There are multiple iterations published for competitions and a NIST draft. This implementation is based on the latest NIST "final" SP (special publication) as of at least 2026-09-26 ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) btw, A... Debian Testing btw). 
 
 ***
 ***
