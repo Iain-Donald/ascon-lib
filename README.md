@@ -4,7 +4,9 @@
 
 ### < In progress, ready soon! (any day now) >
 
-Current status: Testing implementation, files will trickle in. 
+Current status: Testing implementation, files will trickle in.
+
+Completed core files available: 2/x
 
 ### // Ascon reference library for me and for you. //
 
@@ -39,9 +41,23 @@ Use example commands from the project root.
     - `vectors/` ...
     - kat.c
 
-## How to build and run
+## How to build, run, and import
 
-### Build a static library
+### Build and use a static library
+
+`zig build`
+
+// Output
+
+```
+./zig-out/
+    include/ascon.h (library header)
+    lib/libascon.a (static libary bin)
+```
+
+#### Use in your project
+
+Include the header file `ascon.h` and link the static library `libascon.a`, both from the chart above.
 
 ### Build demo
 
@@ -53,23 +69,33 @@ Use example commands from the project root.
 zig cc -std=c99 -I. demo.c ascon_hash.c ascon_xof.c ascon_aead.c ascon_perm.c -o demo
 ```
 
+Output at project root.
+
 #### // Via build.zig
 
 ```
-zig build
+zig build demo
 ```
 
-### Build tests
+Output at `./zig-out/bin/`.
+
+### Build tests - KAT
 
 #### // Via CLI
 
+```
 zig cc -std=c99 -O2 -Iinclude -Isrc tests/kat.c src/*.c -o kat
+```
+
+Output at project root.
 
 #### // Via build.zig
 
 ```
-zig build test
+zig build kat
 ```
+
+Output at ./zig-out/bin/
 
 ***
 ***
