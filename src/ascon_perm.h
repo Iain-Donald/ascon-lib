@@ -1,5 +1,6 @@
 /*
-ascon_perm.h - the Ascon permutation (NIST SP 800-232, Sec. 3)
+// ascon_perm.h
+The Ascon permutation // SP 800-232, section 3.
 */
 
 #ifndef ASCON_PERM_H
@@ -7,7 +8,7 @@ ascon_perm.h - the Ascon permutation (NIST SP 800-232, Sec. 3)
 
 #include "ascon.h"
 
-// Initial values, SP 800-232 Table 14.
+// Initial values, SP 800-232, table 14.
 #define ASCON_AEAD128_IV 0x00001000808c0001ULL
 #define ASCON_HASH256_IV 0x0000080100cc0002ULL
 #define ASCON_XOF128_IV 0x0000080000cc0003ULL
@@ -18,6 +19,6 @@ ascon_perm.h - the Ascon permutation (NIST SP 800-232, Sec. 3)
 #define ASCON_HASH_RATE 8
 
 // Ascon-p[rnd] for 1<=rnd<=16.
-void ascon_permute(ascon_state *s, int rounds);
+void ascon_permute(ascon_state *state, int rounds);
 
 #endif
