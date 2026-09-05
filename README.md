@@ -6,7 +6,7 @@
 
 Current status: Testing implementation, files will trickle in.
 
-// Counting those in ./include, ./src, and build.zig.
+// Counting those in ./include, ./src, and build.zig:
 
 Completed core files available: **3/9**
 
