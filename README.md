@@ -20,6 +20,16 @@ Use example commands from the project root.
 
 <br>
 
+### Prerequisites
+
+- Required
+    - C compiler. Tested compilers:
+        - zig cc
+        - clang
+        - gcc
+- Optional
+    - Zig 0.16. If you would like to use `zig build` rather than the direct compiler command.
+
 ## Import
 
 > In your project, you only need to include the public header in <u>*include/*</u>.
