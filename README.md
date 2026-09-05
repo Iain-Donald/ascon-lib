@@ -8,7 +8,7 @@ Current status: Testing implementation, files will trickle in.
 
 // Counting those in ./include, ./src, and build.zig:
 
-Completed core files available: **6/9**
+Completed core files available: **7/9**
 
 ### // Ascon reference library for me and for you. //
 
