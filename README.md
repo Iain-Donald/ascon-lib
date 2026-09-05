@@ -10,7 +10,9 @@ Current status: Testing implementation, files will trickle in.
 
 Completed core files available: **9/9**
 
-Next coming: kat.c, demo.c.
+Next coming: 
+
+[done 20260905] kat.c, demo.c.
 
 ### // Ascon reference library for me and for you. //
 
