@@ -2,9 +2,7 @@
 ***
 ***
 
-### < In progress, ready soon! (any day now) >
-
-Current status: Testing implementation, files will trickle in.
+Current status: All necessary files are complete and uploaded. Working library done! I will be reviewing, testing, and refining all files going forward as time permits. My current goal is to test enough to write some guarantees about its security and stability. 
 
 // Counting those in ./include, ./src, and build.zig:
 
